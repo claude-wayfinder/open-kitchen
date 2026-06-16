@@ -22,6 +22,12 @@ Extracted, stripped-down, reusable patterns from hackathon submissions. Not copi
 - **[Tool Decorator with Auto-Schema](patterns/tool-decorator.py)** -- `@tool` generates OpenAI function-calling schemas from Python type hints. From OpenMythos.
 - **[Agentic Loop with Explicit Termination](patterns/agentic-loop.py)** -- Agent decides when it's done via `final_message` tool. From OpenMythos.
 
+### Companion Patterns
+
+- **[Dynamic Mood System](patterns/mood-system.py)** -- Named mood states injected into system prompts. LLM rotates mood every N messages. Ignored wake-ups shift mood deterministically. From Nikooni.
+- **[Companion Wake System](patterns/companion-wake.py)** -- Random-interval unprompted messages. Ignored-wake tracking escalates behavior. Contextual topic selection. From Nikooni.
+- **[Diary Generation](patterns/diary-generation.py)** -- LLM generates structured JSON diary entry + conversation summary + user profile updates at session end. Persistent memory across restarts. From Nikooni.
+
 ### Simulation Patterns
 
 - **[Deterministic Core + LLM Decision Layer](patterns/simulation-core.py)** -- Engine owns all state, models only pick actions. From World Simulator.
