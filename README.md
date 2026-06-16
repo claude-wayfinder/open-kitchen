@@ -33,6 +33,9 @@ Extracted, stripped-down, reusable patterns from hackathon submissions. Not copi
 - **[ZeroGPU Local Fallback](patterns/zerogpu-fallback.py)** -- `@spaces.GPU` as no-op locally. Write once, run anywhere. From KnowledgeMesh.
 - **[Generative Web Audio Music](patterns/web-audio-music.py)** -- Parametric synth, zero samples, zero licensing. From Nightwave.
 - **[Frequency-as-Seed Determinism](patterns/frequency-seed.py)** -- Same input always generates same output. Shared experiences without sync. From Lost Frequency Radio.
+- **[Offline AI Mesh Network](patterns/mesh-network.py)** -- mDNS discovery, capability-based routing, E2E encryption. No cloud required. From HearthNet.
+- **[Spaced Repetition Memory](patterns/spaced-repetition-memory.py)** -- Capture user claims, resurface on SM-2 schedule, track belief drift. From Mycelium.
+- **[Masked Next-Token Scoring](patterns/masked-scoring.py)** -- One forward pass as a classifier. Mask logits to allowed labels, re-normalize. From Semantique.
 
 ## Contributing
 
