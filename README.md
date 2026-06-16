@@ -15,12 +15,16 @@ Extracted, stripped-down, reusable patterns from hackathon submissions. Not copi
 - **[Three-Tier Caching](patterns/caching.py)** -- Immutable hashed assets, revalidate dynamic JSON, no-cache HTML. Free performance. From Small Talk.
 - **[Single Structured JSON Call](patterns/structured-json.py)** -- One schema, one call, parse or retry. No chaining. From Small Talk + Claim-Ready.
 - **[Deterministic Guard Layer](patterns/guard-layer.py)** -- Model output verified by code before serving. From Jawbreaker + Her.
+- **[Strategist-Executor](patterns/strategist-executor.py)** -- Big model sets strategy infrequently, tiny model executes in real-time conditioned on the big model's weights. From Duel of Nemotron.
 
 ### Agent Patterns
 
 - **[Append-Only Event Ledger](patterns/event-ledger.py)** -- Agents coordinate through an immutable log. No direct communication. From Multi-Agent Lab.
 - **[Tool Decorator with Auto-Schema](patterns/tool-decorator.py)** -- `@tool` generates OpenAI function-calling schemas from Python type hints. From OpenMythos.
 - **[Agentic Loop with Explicit Termination](patterns/agentic-loop.py)** -- Agent decides when it's done via `final_message` tool. From OpenMythos.
+- **[Governed Self-Modification](patterns/governed-self-modification.py)** -- 10-axis personality vector with clamped drift and a governance gate that audits/rejects mutations. Appraise-map-govern-recompile-memory loop. From daimon.
+- **[Tiered Mutation](patterns/tiered-mutation.py)** -- Three-tier latency hierarchy: instant heuristic tweaks, validated JSON proposals, background semantic rewrites. For live content evolution. From Signal Garden.
+- **[Reason-First](patterns/reason-first.py)** -- Force small models to explain reasoning before choosing actions. Fewer harder training examples beat bulk. From Tiny Browser Planner.
 
 ### Companion Patterns
 
@@ -28,11 +32,18 @@ Extracted, stripped-down, reusable patterns from hackathon submissions. Not copi
 - **[Companion Wake System](patterns/companion-wake.py)** -- Random-interval unprompted messages. Ignored-wake tracking escalates behavior. Contextual topic selection. From Nikooni.
 - **[Diary Generation](patterns/diary-generation.py)** -- LLM generates structured JSON diary entry + conversation summary + user profile updates at session end. Persistent memory across restarts. From Nikooni.
 
+### Security Patterns
+
+- **[Perplexity-Based Anomaly Detection](patterns/perplexity-anomaly.py)** -- Score each token by its perplexity vs baseline. Token-level logprobs for anomaly detection. Local models only. From TinySOC.
+- **[Privacy Firewall](patterns/privacy-firewall.py)** -- Mask PII before LLM call, restore from placeholders after. Regex for structured data, NER for context-dependent. Round-trip pattern. From PrivacyShield.
+
 ### Simulation Patterns
 
 - **[Deterministic Core + LLM Decision Layer](patterns/simulation-core.py)** -- Engine owns all state, models only pick actions. From World Simulator.
 - **[Three-Layer Memory](patterns/memory-layers.py)** -- Raw tick log + semantic episodes + self-authored narrative. From World Simulator.
 - **[Heterogeneous Multi-Model Agents](patterns/multi-model.py)** -- Different labs' models in the same world create emergent behavior. From Thousand Token Wood.
+- **[Reputation Network](patterns/reputation-network.py)** -- Trust/influence economy with adaptive agents. Information mutation through social channels. Public/private belief divergence. From Village Gossip Simulator.
+- **[Modular Specialists](patterns/modular-specialists.py)** -- Multiple small neural nets communicating through a shared latent channel. Coordinator reads shared state to choose actions. From ModuleMind.
 
 ### Utility Patterns
 
